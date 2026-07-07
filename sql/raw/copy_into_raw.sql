@@ -1,0 +1,16 @@
+USE DATABASE NONPROD_FRAUD;
+USE SCHEMA RAW;
+
+COPY INTO THREATMATRIX_EVENTS
+FROM
+(
+    SELECT
+        $1:eventId::STRING,
+        $1:eventSource::STRING,
+        $1:eventType::STRING,
+        TO_TIMESTAMP_NTZ($1:eventTime::STRING),
+        PARSE_JSON($1),
+        CURRENT_TIMESTAMP()
+    FROM @THREATMATRIX_STAGE
+)
+FILE_FORMAT = (TYPE = JSON);

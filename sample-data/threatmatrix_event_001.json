@@ -1,0 +1,14 @@
+{
+    "eventId": "EVT-1003",
+    "eventSource": "ThreatMatrix",
+    "eventType": "LOGIN_ATTEMPT",
+    "eventTime": "2026-07-07T10:30:00Z",
+    "customerId": "C10003",
+    "customerName": "John",
+    "email": "john@test.com",
+    "ipAddress": "192.168.1.50",
+    "country": "UK",
+    "device": "Edge",
+    "riskScore": 88,
+    "status": "BLOCKED"
+}
