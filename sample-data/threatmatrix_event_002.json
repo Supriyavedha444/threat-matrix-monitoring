@@ -1,0 +1,14 @@
+{
+    "eventId": "EVT-1004",
+    "eventSource": "ThreatMatrix",
+    "eventType": "PASSWORD_RESET",
+    "eventTime": "2026-07-07T10:45:00Z",
+    "customerId": "C10004",
+    "customerName": "Priya",
+    "email": "priya@test.com",
+    "ipAddress": "10.10.20.30",
+    "country": "India",
+    "device": "Chrome",
+    "riskScore": 25,
+    "status": "SUCCESS"
+}
